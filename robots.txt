@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_unused/
+
+Sitemap: https://aftcre.com/sitemap.xml

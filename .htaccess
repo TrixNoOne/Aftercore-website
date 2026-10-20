@@ -1,0 +1,17 @@
+# AfterCore — Apache / cPanel error documents.
+#
+# These lines tell an Apache host which static page to serve for each HTTP status. They make
+# 400.html, 401.html, 403.html, 404.html, 500.html and 503.html actually appear.
+#
+# nginx, Netlify, Cloudflare Pages, GitHub Pages and most CDNs ignore this file: use
+#   - Netlify:            add a _redirects file with "/* /404.html 404"
+#   - Cloudflare Pages:   Settings > Custom error pages, point each status at the file below
+#   - GitHub Pages:       only 404.html is served automatically
+# Delete this file if the host is not Apache, or if it conflicts with the panel's own settings.
+
+ErrorDocument 400 /400.html
+ErrorDocument 401 /401.html
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+ErrorDocument 503 /503.html
